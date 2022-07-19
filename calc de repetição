@@ -1,0 +1,62 @@
+print(" Escolha a operação a ser executada: ")
+print("1. Adição")
+print("2. Subtração")
+print("3. Multiplicação")
+print("4. Divisão")
+print("5. Sair")
+
+def menu():
+    print(" Escolha a operação a ser executada: ")
+    print("1. Adição")
+    print("2. Subtração")
+    print("3. Multiplicação")
+    print("4. Divisão")
+    print("5. Sair")
+    
+operacao = input()
+
+if operacao == "1":
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+    print("A soma é " + str(int(num1) + int(num2)))
+    menu()
+elif operacao == "2":
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+    print("A subtração é " + str(int(num1) - int(num2)))
+    menu()
+elif operacao == "3":
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+    print("A Multiplicação é " + str(int(num1)* int(num2)))
+    menu()
+elif operacao == "4":
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+    print("A divisão é " + str(int(num1) / int(num2)))
+    menu()
+elif operacao == "5":
+    print("Saindo do programa....")
+
+
+operacao = input()
+
+if operacao == "1":
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+    print("A soma é " + str(int(num1) + int(num2)))
+    menu()
+elif operacao == "2":
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+    print("A subtração é " + str(int(num1) - int(num2)))
+elif operacao == "3":
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+    print("A Multiplicação é " + str(int(num1)* int(num2)))
+elif operacao == "4":
+    num1 = input("Digite o primeiro número: ")
+    num2 = input("Digite o segundo número: ")
+    print("A divisão é " + str(int(num1) / int(num2)))
+elif operacao == "5":
+    print("Saindo do programa....")
