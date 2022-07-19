@@ -1,0 +1,28 @@
+#declaração de funçao 
+def dados():
+        print('-'*22)
+        print("|CALCULADORA DE IDADE|")
+        print('-'*22)
+        try:
+            nome = input("Digite o seu nome completo: ")
+            ano_nascimento = int(input("Ano de nascimento: "))
+            idade = 2022 - ano_nascimento
+            print("O teu nome é",nome,". E você tem", idade,"anos de idade.")
+        except:
+            print("Valores inválidos")
+            dados()
+
+print('-'*22)
+print("|CALCULADORA DE IDADE|")
+print('-'*22)
+
+#entrada de dados
+
+try:
+    nome = input("Digite o seu nome completo: ")
+    ano_nascimento = int(input("Ano de nascimento: "))
+    idade = 2022 - ano_nascimento
+    print("O teu nome é",nome,". E você tem", idade,"anos de idade.")
+except:
+    print("Valores inválidos")
+    dados()
