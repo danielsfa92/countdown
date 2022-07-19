@@ -20,6 +20,6 @@ while True:
     elif operacao == '*':
          resultado = num1 * num2
     else: 
-        resultado = 'Operação inválida'
+        resultado = 'Operação inválida. Resultado 0'
         
     print(str(num1) + ' ' + str(operacao) + ' ' + str(num2) + ' = ' + str(resultado))
