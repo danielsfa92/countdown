@@ -1,0 +1,88 @@
+## Professor. Eu não consigo atribuir os votos ao contadores. 
+## Ao rodar o programa e votar. Eles não são computados. 
+## Apenas o voto branco fica sempre com 1 e as outras opções com 0
+
+from enum import Enum
+
+class votacao(Enum):
+    candidato_X = 889
+    candidato_Y = 847
+    candidato_Z = 515
+    branco = 0
+
+candidato_X = 889
+candidato_Y = 847
+candidato_Z = 515
+branco = 0
+
+votos_candidato_X = 0
+votos_candidato_Y = 0
+votos_candidato_Z = 0
+votos_branco = 0
+
+X = 889
+Y = 847
+Z = 515
+branco = 0
+
+def v_novamente():
+
+  votos_candidato_X = votos_candidato_X + 1
+  votos_candidato_Y = votos_candidato_Y + 1
+  votos_candidato_Z = votos_candidato_Z + 1
+  votos_branco = 0
+
+  voto = str(int(input('Qual o seu voto? ')))
+
+  if (voto == votacao.candidato_X.value):
+    votos_candidato_X = votos_candidato_X + 1
+  elif (voto == votacao.candidato_Y.value):
+    votos_candidato_Y = votos_candidato_Y + 1
+  elif (voto == votacao.candidato_Z.value):
+    votos_candidato_Z = votos_candidato_Z + 1
+  else:
+    votos_branco = votos_branco + 1
+  resp = input('Deseja terminar a votação? [S/N]')
+
+  if (resp == 'S') or (resp == 's'):
+    print('Votação encerrada!')
+  elif (resp == 'N') or (resp == 'n'):
+    v_novamente()
+
+print('ELEIÇÕES SOFTEX:')
+print('Candidato X: 889')
+print('Candidato Y: 847')
+print('Candidato Z: 515')
+print('Voto Branco: 0')
+voto = str(int(input('Qual o seu voto? ')))
+
+if (voto == votacao.candidato_X.value):
+    votos_candidato_X = votos_candidato_X + 1
+elif (voto == votacao.candidato_Y.value):
+    votos_candidato_Y = votos_candidato_Y + 1
+elif (voto == votacao.candidato_Z.value):
+    votos_candidato_Z = votos_candidato_Z + 1
+else:
+    votos_branco = votos_branco + 1
+
+resp = input('Deseja terminar a votação? [S/N]')
+
+if (resp == 'S') or (resp == 's'):
+    print('Votação encerrada!')
+elif (resp == 'N') or (resp == 'n'):
+    v_novamente()
+
+mais_votado = max(votos_candidato_X,votos_candidato_Y,votos_candidato_Z)
+  
+if (mais_votado == votos_candidato_X):
+    vencedor = candidato_X
+elif (mais_votado == votos_candidato_Z):
+    vencedor = candidato_Y
+else:
+    vencedor = candidato_Z
+
+print('Vencedor: ' + str(vencedor))
+print('Candidato X: ' + str(votos_candidato_X) + ' votos')
+print('Candidato Y: ' + str(votos_candidato_Y) + ' votos')
+print('Candidato Z: ' + str(votos_candidato_Z) + ' votos')
+print('Brancos: ' + str(votos_branco) + ' votos')
