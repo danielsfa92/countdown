@@ -1,0 +1,28 @@
+class Computador:
+    def __init__(self,marca,memoria_ram, processador):
+        self.marca = marca
+        self.memoria_ram = memoria_ram
+        self.processador = processador
+
+
+    def Ligar(self):
+        print('Computador está inicializado...')
+    
+    def Desligar(self):
+        print('Computador está sendo desligado...\n')
+
+    def EspecificacoesDoComputador(self):
+        print(self.marca, self.memoria_ram, self.processador)
+
+computador1 = Computador('Acer', '8gb','AMD' )
+computador1.Ligar()
+computador1.EspecificacoesDoComputador()
+computador1.Desligar()
+computador2 = Computador('Dell','16gb','Intel')
+computador2.Ligar()
+computador2.EspecificacoesDoComputador()
+computador2.Desligar()
+computador3 = Computador('Sony','32gb','AMD')
+computador3.Ligar()
+computador3.EspecificacoesDoComputador()
+computador3.Desligar()
