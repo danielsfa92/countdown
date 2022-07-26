@@ -1,0 +1,52 @@
+public class Pessoa implements Serializable{
+    private int id;
+    private String nome;
+    
+    public pessoa(int id, String nome) {
+        this.setId(id);
+        this.setNome(nome);
+    }
+    
+    public int getid(){
+        return id;
+    p
+    public String getNome() {
+        return nome;
+    }
+        
+    public void setNome(String nome){
+        this.nome = nome
+    }
+    public void setid(int id) {
+        this.id = id;
+    }
+}
+
+
+{
+	public static void main(String[] args) {
+		ArquivoBinarioSerializado();
+		lerArquivoBinarioSerializado();
+	}
+}
+
+    private static void ArquivoBinarioSerializado() {
+        Pessoa p1 = new Pessoa(1, "Daniel Araujo", 1992, "23456")
+        FileOutputStream arquivo = null
+        ObjectOutputStream obj = null 
+        try{    // instanciar os objetos
+            arquivo = new FileOutputStream("arquivo.bin");
+            obj = new ObjectOutputStream(arquivo);
+            obj.writeObject(p1);
+            obj.close()
+            
+        }
+        
+    public static void lerArquivoBinarioSerializado(){
+        Pessoa p1 = null;
+        FileInputStream fis = null;
+        ObjectInputStream ois = null;
+        ois.close()
+        return Serializable
+    }
+    }
