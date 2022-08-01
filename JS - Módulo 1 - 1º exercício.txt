@@ -1,0 +1,11 @@
+
+Comentário da foto 1:
+
+O comando <script type= "text/javascript">
+está sendo utilizado para fazer o recarregamento automático da página após um intervalo de 300 segundos.
+Esse tipo de ação é usado em sites de notícias para que haja sempre uma atualização constante.
+
+
+Comentário da foto 2:
+
+Neste caso, o comando <script type= "text/javascript"> usa função para mostrar um carrosel de produtos de um site de comércio eletrônico.
